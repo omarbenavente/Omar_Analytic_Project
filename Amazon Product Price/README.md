@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This data analysis project aims to provide insights of Amazon Product Sales dataset in 2023. The project will obtain the objective of the project by asking 3 main questions as well as other relevant questions. To reach the goal the following goal, I have to retrieve the files from kaggle, do a lot of data cleaning, doing Exploratory Data Analysis, and Data visualization in the following order.  
+This data analysis project aims to provide insights into Amazon Product Price Sales in 2023.  We'll be analyzing what price range is the most common on Amazon.  Furthermore, We'll look deeper into different brands and categories based on the rating and number of ratings, as well as figure out if the discount % helps with the overall rating of the product. 
 
 ## Data Sources
 
@@ -27,8 +27,8 @@ Amazon Product Sales: I used the amazon data files from Kaggle: https://www.kagg
 - Add a new colum of the brand of the product.
 ### 3. Exploratory Data Analysis/Data Analysis/Data Visualization
 - EDA involing exploring the amazon sales and answer question like, what are the top 5 most expensive item listed on Amazon?, most common price range listed?, popular brands?, etc.
-- After answering these questions, most of the question will be presented in Visualization format (Matplotlib.pyplot, iplot, and Seaborn)
+- After answering these questions, most of the questions will be presented in Visualization format (Matplotlib.pyplot, iplot, and Seaborn)
 ### 4. Insights and Conclusion
-After I finished analyzing and visualizing the dataset, I give my insight on the results of the analysis that seems important and answering the questions from the objective
+After I finished analyzing and visualizing the dataset, I gave my insight on the results of the analysis that seemed important and answered the questions from the objective.
 
 ### Hope you enjoy reading my project
