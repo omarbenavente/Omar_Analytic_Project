@@ -1,7 +1,7 @@
 # Cyclist Data Project
 
 ## Project Overview
-The Goal for this project is to provide insights on the usage of bicycles when it comes to time, location, members or types of bikes. This takes place in the city of Chicago. I use programming languages such as Python and PostgreSQL as wel as data visualization tools such as Tableau. This project shows my proficient skills such as data analytics, data visualization, and technical skills.  
+The goal of this project is to provide insights into the usage of bicycles when it comes to time, location, members, or types of bikes. The cyclist data file takes place in the city of Chicago. I use programming languages such as Python and PostgreSQL as well as data visualization tools such as Tableau. This project shows my skills in data analytics, data visualization, and technical skills.  
 # Data Source
 Cyclistic Bike Share: I use the cyclistic data from Kaggle:
 https://www.kaggle.com/datasets/godofoutcasts/cyclistic-bike-share-2023
