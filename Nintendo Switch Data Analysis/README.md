@@ -4,6 +4,8 @@
 
 This project is based on all of Nintendo Switch games that was included from the month it was released which is 2017 to September 2022. It also contain developers, publishers, votes, genres, released dates, etc. that will provide intriguing insights about nintendo switch. For this project, I used Microsoft excel to do all of the Data Visualizations. This project will show my data cleaning pivot table and data visualization skills in excel.
 
+You can see the dashboard in the excel file called "nintendo - switch-games.xslx"
+
 # Data Source
 
 Nintendo Switch Games Review: I used the data from Kaggle: https://www.kaggle.com/datasets/giovanni60310/nintendo-switch-games-reviews
