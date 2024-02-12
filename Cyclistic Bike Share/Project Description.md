@@ -28,5 +28,5 @@ I use PostgreSQL as my database type
 - export the data to csv so we can visualize it with tableau
 
 ### 3. Tableau: Data Visualization
-- Importing the csv file from PostgrSQL
+- Importing the csv file from PostgreSQL
 - Make some Graph, then creating dashboard 
