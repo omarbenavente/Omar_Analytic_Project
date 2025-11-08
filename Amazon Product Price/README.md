@@ -2,30 +2,40 @@
 
 ## Project Overview
 
-This data analysis project aims to provide insights into Amazon Product Price Sales in 2023.  We'll be analyzing what price range is the most common on Amazon.  Furthermore, We'll look deeper into different categories based on most sales and most popular products, as well as which product has the highest ratings with the most number of ratings. 
+This data analysis project provides insights into Amazon product prices and sales trends in 2023. The goal is to identify patterns in pricing, sales, and popularity across product categories.
+
+Specifically, this analysis explores:
+- The most common price ranges on Amazon
+- The top-selling and most popular product categories
+- Products with the highest ratings and greatest number of reviews
 
 ## Data Sources
 
-Amazon Product Sales: I used the amazon data files from Kaggle: https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset/data
+Amazon Product Sales (from Kaggle): https://www.kaggle.com/datasets/lokeshparab/amazon-products-dataset/data
 
 ## Tools
 
-- Python - Pandas, Data Cleaning, Data Analysis, Data Visualization
+- Python: Pandas, Data Cleaning, Data Analysis, Data Visualization
 
 ## Steps for this Project
 
 ### 1. Retriving the files
-- Import the python packages such as pandas, numpy, seaborn, matplotlib.pyplot, glob, etc.
-- Collect files from Kaggles
-- Merging all the files into one dataframe
+- Imported Python libraries such as pandas, numpy, seaborn, and matplotlib.
+- Collected and loaded the dataset from Kaggle.
+- Merged multiple CSV files into a single DataFrame for analysis.
 ### 2. Data Cleaning/Adding Columns
-- Handling missing values
-- Remove duplicates
-- Taking out rupees money signs, convert string to float, and convert rupees to US dollar
-- removing the strings from ratings and number of ratings, then converting it to its appropriate data type
-### 3. Exploratory Data Analysis/Data Analysis/Data Visualization
-- EDA involing exploring the amazon sales and answer question like, what are the top 5 most expensive item listed on Amazon?, most common price range listed?, Most Sales for discounted price?, etc.
-- After answering these questions, most of the questions will be presented in Visualization format (Matplotlib.pyplot, iplot, and Seaborn)
+- Handled missing values and removed duplicate records.
+- Cleaned currency columns by removing rupee symbols, converting strings to floats, and converting values from INR to USD.
+- Processed rating columns by removing text and converting them to numeric data types.
 
+### 3. Exploratory Data Analysis & Data Visualization
+Explored key questions such as:
+- What are the top 5 most expensive products listed on Amazon?
+- What is the most common price range?
+- Which products show the most sales or discounts?
+- Presented findings through visualizations using Matplotlib, Seaborn, and Plotly (iplot) for interactive charts.
+
+### Conclusion
+This project highlights data cleaning, transformation, and visualization techniques to uncover trends in Amazon’s 2023 product listings.
 
 ### Hope you enjoy reading my project
