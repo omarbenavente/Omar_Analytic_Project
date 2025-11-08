@@ -1,32 +1,34 @@
 # Cyclist Data Project
 
 ## Project Overview
-The goal of this project is to provide insights into the usage of bicycles when it comes to time, location, members, or types of bikes. The cyclist data file takes place in the city of Chicago. I use programming languages such as Python and PostgreSQL as well as data visualization tools such as Tableau. This project shows my skills in data analytics, data visualization, and technical skills.  
+The goal of this project is to analyze bicycle usage patterns in Chicago based on time, location, membership type, and bike type. The dataset focuses on cyclist activity within the city of Chicago. I utilized Python and PostgreSQL for data cleaning and analysis, along with Tableau for data visualization. This project demonstrates my skills in data analytics, data visualization, and technical problem-solving.
+
 # Data Source
-Cyclistic Bike Share: I use the cyclistic data from Kaggle:
-https://www.kaggle.com/datasets/godofoutcasts/cyclistic-bike-share-2023
+Cyclistic Bike Share (Kaggle): https://www.kaggle.com/datasets/godofoutcasts/cyclistic-bike-share-2023
 
 ## Tools
-- Python - Pandas, Gathering files, Data Cleaning
-- SQL - Create tables, little more Data cleaning, Data Analysis
-- Tableau - Data Visualization
+- Python: Pandas, Gathering files, Data Cleaning
+- SQL: Create tables, little more Data cleaning, Data Analysis
+- Tableau: Data Visualization
 
 ## Steps for this project:
-### 1. Gathering and Cleaning Files using Python:
-- Dealing with missing values
-- converting columns to its datatype
-- removing rows on which the start time column is later than the end time column
-- adding new row of day, day of week, month, and year
-- export the data to csv in order to transport it to SQL
+### 1. Gathering and Cleaning Data using Python:
+- Handled missing values
+- Converted columns to appropriate data types
+- Removed rows where the start time occurred after the end time
+- Added new columns for day, day of the week, month, and year
+- Exported the cleaned dataset to a CSV file for use in SQL
 
 ### 2. SQL: more editing and Data Analysis
-I use PostgreSQL as my database type
-- Creating a table called cyclist_data, then importing the csv file created from Python
-- Created a new table called cyclist by using all the data from cyclist_data plus a new column with the length (in minutes) of the difference from the start time and end time
-- filtering out the data with the length of the bike ride is more than 1 minute, to make sure we want data for bikers who actually biked.
-- Asking and answering 10 questions (Data Analysis)
-- export the data to csv so we can visualize it with tableau
+Using PostgreSQL as the database:
+- Created a table called cyclist_data and imported the cleaned CSV file
+- Generated a new table called cyclist containing all data from cyclist_data, plus a new column calculating the ride duration (in minutes)
+- Filtered out rides shorter than 1 minute to ensure only valid trips were included
+- Performed data analysis by formulating and answering 10 key questions about the dataset
+- Exported the analyzed data to a CSV file for visualization in Tableau
 
 ### 3. Tableau: Data Visualization
-- Importing the csv file from PostgreSQL
-- Make some Graph, then creating dashboard 
+- Imported the final CSV file from PostgreSQL
+- Created multiple charts and graphs to visualize trends and insights
+- Combined visuals into an interactive dashboard
+
