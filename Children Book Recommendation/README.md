@@ -2,6 +2,9 @@
 
 **Developed for the CSE 6242 course during my M.S. in Analytics program at the Georgia Institute of Technology, alongside Daniel Barrale, Mari Villalta, Lemlem Zikarge, and Valeria Lara.**
 
+## Table of Contents
+- [Machine Learning Models](#machine-learning-models)
+
 ## 📌 Problem Definition
 Despite reading comprehension being foundational to future success, approximately 40% of students in the US cannot read at a basic level. While there are many book recommendation systems available, they present two major flaws when applied to younger audiences:
 * Most applications are geared toward adults and lack features that accurately address a child's reading capabilities.
