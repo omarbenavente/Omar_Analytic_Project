@@ -1,6 +1,6 @@
 # Book Genie: A Children's Book Recommendation System
 
-**Developed for the CSE 6242 course during my M.S. in Analytics program at the Georgia Institute of Technology, alongside Daniel Barrale, Mari Villalta, Lemlem Zikarge, and Valeria Lara.**
+**Developed for the CSE 6242 course during my M.S. in Analytics program at the Georgia Institute of Technology, alongside with 3 other classmates**
 
 ## Table of Contents
 1. [Installation](#install)
@@ -17,6 +17,7 @@
    * Python Version 3.10+
      ### Key Libraries
      * pandas, numpy -> data manipulation and preprocessing
+     * seaborn -> data visualization
      * scikit-learn -> modeling and clustering
      * matplotlib -> vizualizations
      * tqdm -> progress tracking
@@ -92,12 +93,46 @@ Book Genie features an intentionally child-friendly design utilizing bright colo
 ---
 
 ## 7. <a id="evaluation"></a>📊 Evaluation & Results
-Both models were trained using an 80/20 data split. 
+
+**Top 10 Recommendations for 'The Teddy Bear Habit':**
+
+| ID | title | school_level | popularity_score | final_score |
+|---|---|---|---|---|
+| 5982 | Cheer Up Your Teddy Bear, Emily Bro | Elementary | 3.958 | 0.449 |
+| 20571 | The Berenstain Bears and the Bad Ha | Elementary | 3.966 | 0.43 |
+| 4719 | Teddy the Bear | Elementary | 3.93 | 0.425 |
+| 15844 | The Tin Woodman of Oz (Oz, #12) | Elementary | 3.955 | 0.417 |
+| 23685 | Teddy Bears in Monsterland | Elementary | 3.966 | 0.415 |
+| 11119 | The Berenstain Bears Save Christmas | Elementary | 3.953 | 0.403 |
+| 20137 | The Boy with Two Shadows | Elementary | 3.957 | 0.385 |
+| 17721 | Rest, Play, Grow: Making Sense of Pr | Elementary | 4.002 | 0.379 |
+| 10948 | Starting with Melodie | Elementary | 3.894 | 0.378 |
+| 18781 | The Silver Horn (Eaglesmount Trilogy | Elementary | 3.956 | 0.377 |
+
+Table from above presents an example of the top 10 book recommendations for readers who enjoyed The Teddy Bear Habit. The recommendations are based on the similarity between the books, with a focus on identifying titles that may appeal to children who enjoy reading books featuring teddy bears.
+
+All of the models were trained using an 80/20 train-test data split. 
 * **Model Accuracy:** The Logistic Regression model achieved 96% accuracy, slightly outperforming the Random Forest model which reached 95% accuracy. 
 * **Retrieval Metrics:** Evaluated against 400 sample books, the model proved highly accurate at ranking relevant books, achieving a Precision@10 of 0.956 and an NDCG@10 of 0.952.
-* **User Testing:** An 11-person user study rated the application favorably, scoring 3.91 out of 5 for engagement and 3.82 out of 5 for interface intuitiveness. Qualitative feedback praised the Match Score feature but suggested further simplifying the charts for younger audiences.
+
+A small user study with 11 teammates was conducted to evaluate the Book Genie dashboard. Due to time constraints, participants did not fully represent the intended audience of parents, teachers, and children; however, their feedback provided useful insights into the dashboard’s usability and areas for improvement.
+
+Overall, participants responded positively to Book Genie’s engaging concept, intuitive filtering, search functionality, and personalized recommendations through the Match Score feature. Key areas for improvement included simplifying the visually dense interface, consolidating filters, improving default table sorting, and integrating instructions more clearly. Participants also noted inconsistencies in grade-level classifications, which affected confidence in recommendation accuracy. Overall, the feedback highlighted opportunities to create a more accessible interface for younger users and improve reading-level metrics and recommendation clarity.
+
+The respondents' ratings were averaged together for each question. The results as follows
+| Survey Questions | Average Results |
+|---|:---:|
+| From 1-5, how engaging is the application? | 3.91 |
+| From 1-5, how intuitive is the interface? (For example, how clear were the buttons and navigation options) | 3.82 |
+| From 1-5, how much does the reading difficulties align with your expectations of the books? | 3.64 |
+| From 1-5, how much does the match score provide guidance in searching for a book? | 3.64 |
+| From 1-5, how useful would this app be for helping a child find appropriate books? | 3.64 |
 
 ---
 
 ## 8. <a id="limitations"></a>🔮 Limitations & Future Work
-Because the current readability scores rely on book descriptions rather than actual story text, they cannot detect thematic maturity or account for sophisticated blurbs written by adults. Future iterations will focus on full-text analysis and longitudinal studies to better understand the long-term impact on reading engagement.
+Book Genie’s readability scores are based on book descriptions rather than the full story text. Since these descriptions are often written for marketing purposes, they may use more sophisticated vocabulary than the actual content of the book, potentially inflating its estimated difficulty. Additionally, the Flesch-Kincaid readability formula primarily considers factors such as sentence length and syllable count, which limits its ability to capture thematic maturity. As a result, a book with simple language may still contain complex themes that the model cannot identify. Future studies could expand the dataset to include more diverse and recent books while incorporating full-text analysis to improve reading-level assessments and recommendation accuracy.
+
+Furthermore, exploring different values of k in the K-means clustering model could help determine whether five themes adequately represent the range of topics across the books. Increasing the number of clusters may provide more specific and meaningful thematic classifications.
+
+Overall, Book Genie demonstrates the potential of data-driven recommendation systems to support reading engagement and improve access to children’s literature through intelligent, user-centered design.
