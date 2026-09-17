@@ -3,12 +3,12 @@
 **Developed for the CSE 6242 course during my M.S. in Analytics program at the Georgia Institute of Technology, alongside Daniel Barrale, Mari Villalta, Lemlem Zikarge, and Valeria Lara.**
 
 ## Table of Contents
-- [📌 Problem Definition](#problem-definition)
-- [🚀 Proposed Methodology & Data Pipeline](#proposed-methodology--data-pipeline)
-- [🧠 Machine Learning Models](#machine-learning-models)
-- [💻 Interactive Dashboard & UI](#interactive-dashboard--ui)
-- [📊 Evaluation & Results](#evaluation--results)
-- [🔮 Limitations & Future Work](#limitations--future-work)
+- [📌 Problem Definition](#problem)
+- [🚀 Proposed Methodology & Data Pipeline](#methodology)
+- [🧠 Machine Learning Models](#models)
+- [💻 Interactive Dashboard & UI](#dashboard)
+- [📊 Evaluation & Results](#evaluation)
+- [🔮 Limitations & Future Work](#limitations)
 
 ## 📌 Problem Definition
 Despite reading comprehension being foundational to future success, approximately 40% of students in the US cannot read at a basic level. While there are many book recommendation systems available, they present two major flaws when applied to younger audiences:
