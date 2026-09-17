@@ -19,7 +19,7 @@ To address this, we built **Book Genie**, a privacy-first recommendation system 
 
 ---
 
-## 🚀 Proposed Methodology & Data Pipeline
+## <a id="methodology"></a>🚀 Proposed Methodology & Data Pipeline
 Our approach bypasses the cold-start problem and data dependency limitations of traditional collaborative filtering by utilizing content-based similarity and natural language processing.
 
 * **Data Sourcing:** We aggregated three compressed JSON datasets containing user reviews and book characteristics (like length and description) under the Children genre from the UCSD McAuley Lab Goodreads data.
@@ -29,7 +29,7 @@ Our approach bypasses the cold-start problem and data dependency limitations of 
 
 ---
 
-## 🧠 Machine Learning Models
+## <a id="models"></a>🧠 Machine Learning Models
 To predict book difficulty and categorize textual themes, we leveraged both classification and clustering algorithms.
 
 * **Difficulty Prediction Models:** 
@@ -43,7 +43,7 @@ To predict book difficulty and categorize textual themes, we leveraged both clas
 
 ---
 
-## 💻 Interactive Dashboard & UI
+## <a id="dashboard"></a>💻 Interactive Dashboard & UI
 Book Genie features an intentionally child-friendly design utilizing bright colors, playful elements, and large clickable areas to accommodate developing motor skills.
 
 * **Dynamic Filtering:** Users can filter by popularity, reading level, and theme, or query specific keywords using the search bar. 
@@ -52,7 +52,7 @@ Book Genie features an intentionally child-friendly design utilizing bright colo
 
 ---
 
-## 📊 Evaluation & Results
+## <a id="evaluation"></a>📊 Evaluation & Results
 Both models were trained using an 80/20 data split. 
 * **Model Accuracy:** The Logistic Regression model achieved 96% accuracy, slightly outperforming the Random Forest model which reached 95% accuracy. 
 * **Retrieval Metrics:** Evaluated against 400 sample books, the model proved highly accurate at ranking relevant books, achieving a Precision@10 of 0.956 and an NDCG@10 of 0.952.
@@ -60,5 +60,5 @@ Both models were trained using an 80/20 data split.
 
 ---
 
-## 🔮 Limitations & Future Work
+## <a id="limitations"></a>🔮 Limitations & Future Work
 Because the current readability scores rely on book descriptions rather than actual story text, they cannot detect thematic maturity or account for sophisticated blurbs written by adults. Future iterations will focus on full-text analysis and longitudinal studies to better understand the long-term impact on reading engagement.
