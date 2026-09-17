@@ -3,12 +3,37 @@
 **Developed for the CSE 6242 course during my M.S. in Analytics program at the Georgia Institute of Technology, alongside Daniel Barrale, Mari Villalta, Lemlem Zikarge, and Valeria Lara.**
 
 ## Table of Contents
+- [Installation](#install)
 - [📌 Problem Definition](#problem)
 - [🚀 Proposed Methodology & Data Pipeline](#methodology)
 - [🧠 Machine Learning Models](#models)
 - [💻 Interactive Dashboard & UI](#dashboard)
 - [📊 Evaluation & Results](#evaluation)
 - [🔮 Limitations & Future Work](#limitations)
+
+## <a id="install"></a> Installation
+1. Necessary applications 
+   * Python Version 3.10+
+     ### Key Libraries
+     * pandas, numpy -> data manipulation and preprocessing
+     * scikit-learn -> modeling and clustering
+     * matplotlib -> vizualizations
+     * tqdm -> progress tracking
+   * Jupyter Notebooks
+   * Power BI Desktop (only available on Windows OS)
+
+  
+2. Download the following datasets from [Good Reads datasets](https://cseweb.ucsd.edu/~jmcauley/datasets/goodreads.html)
+   * _goodreads_books_children.json.gz_
+   *   _goodreads-interactions-children.json.gz_
+   *   _goodreads-review_children.json.gz datasets_
+  
+3. Project Files
+   * Download or clone the following files:
+     * **Final_Children_Book_Recommendation.ipynb**
+       * Used for data cleaning, model building, and "final.csv"
+     * **Book Genie App.pbix**
+        * Power Bi dashboard for vizualization
 
 ## <a id="problem"></a>📌 Problem Definition
 Despite reading comprehension being foundational to future success, approximately 40% of students in the US cannot read at a basic level. While there are many book recommendation systems available, they present two major flaws when applied to younger audiences:
