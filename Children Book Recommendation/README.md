@@ -10,6 +10,8 @@
 - [📊 Evaluation & Results](#evaluation)
 - [🔮 Limitations & Future Work](#limitations)
 
+## <a id="problem"></a>📌 Problem Definition
+
 ## 📌 Problem Definition
 Despite reading comprehension being foundational to future success, approximately 40% of students in the US cannot read at a basic level. While there are many book recommendation systems available, they present two major flaws when applied to younger audiences:
 * Most applications are geared toward adults and lack features that accurately address a child's reading capabilities.
