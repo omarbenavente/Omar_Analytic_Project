@@ -3,16 +3,16 @@
 **Developed for the CSE 6242 course during my M.S. in Analytics program at the Georgia Institute of Technology, alongside Daniel Barrale, Mari Villalta, Lemlem Zikarge, and Valeria Lara.**
 
 ## Table of Contents
-- [Installation](#install)
-- [Execution](#execute)
-- [📌 Problem Definition](#problem)
-- [🚀 Proposed Methodology & Data Pipeline](#methodology)
-- [🧠 Machine Learning Models](#models)
-- [💻 Interactive Dashboard & UI](#dashboard)
-- [📊 Evaluation & Results](#evaluation)
-- [🔮 Limitations & Future Work](#limitations)
+1. [Installation](#install)
+2. [Execution](#execute)
+3. [📌 Problem Definition](#problem)
+4. [🚀 Proposed Methodology & Data Pipeline](#methodology)
+5. [🧠 Machine Learning Models](#models)
+6. [💻 Interactive Dashboard & UI](#dashboard)
+7. [📊 Evaluation & Results](#evaluation)
+8. [🔮 Limitations & Future Work](#limitations)
 
-## <a id="install"></a> Installation
+## 1. <a id="install"></a> Installation
 1. Necessary applications 
    * Python Version 3.10+
      ### Key Libraries
@@ -36,7 +36,7 @@
      * **Book Genie App.pbix**
         * Power Bi dashboard for vizualization
 
-## <a id="execute"></a> Execution
+## 2. <a id="execute"></a> Execution
 
 1. Open **Final_Children_Book_Recommednation.ipynb** in Jupyter Notebook
    * Make sure the three "Good Reads Datasets" is in the same folder as Final_Children_Book_Recommendation.ipynb
@@ -45,7 +45,7 @@
 3. Open **Book Genie App.pbix**
 4. Ensure source is linked to "final.csv"
 
-## <a id="problem"></a>📌 Problem Definition
+## 3. <a id="problem"></a>📌 Problem Definition
 Despite reading comprehension being foundational to future success, approximately 40% of students in the US cannot read at a basic level. While there are many book recommendation systems available, they present two major flaws when applied to younger audiences:
 * Most applications are geared toward adults and lack features that accurately address a child's reading capabilities.
 * Existing recommendation models rely heavily on storing and analyzing historical user data, which introduces significant privacy concerns for children's applications.
@@ -54,7 +54,7 @@ To address this, we built **Book Genie**, a privacy-first recommendation system 
 
 ---
 
-## <a id="methodology"></a>🚀 Proposed Methodology & Data Pipeline
+## 4. <a id="methodology"></a>🚀 Proposed Methodology & Data Pipeline
 Our approach bypasses the cold-start problem and data dependency limitations of traditional collaborative filtering by utilizing content-based similarity and natural language processing.
 
 * **Data Sourcing:** We aggregated three compressed JSON datasets containing user reviews and book characteristics (like length and description) under the Children genre from the UCSD McAuley Lab Goodreads data.
@@ -64,7 +64,7 @@ Our approach bypasses the cold-start problem and data dependency limitations of 
 
 ---
 
-## <a id="models"></a>🧠 Machine Learning Models
+## 5. <a id="models"></a>🧠 Machine Learning Models
 To predict book difficulty and categorize textual themes, we leveraged both classification and clustering algorithms.
 
 * **Difficulty Prediction Models:** 
@@ -78,16 +78,20 @@ To predict book difficulty and categorize textual themes, we leveraged both clas
 
 ---
 
-## <a id="dashboard"></a>💻 Interactive Dashboard & UI
+## 6. <a id="dashboard"></a>💻 Interactive Dashboard & UI
+
+￼<img width="833" height="464" alt="Screenshot 2026-09-17 at 4 46 44 PM" src="https://github.com/user-attachments/assets/2b6c9447-186f-4afd-8a7a-7aefc5dc9302" />
+
 Book Genie features an intentionally child-friendly design utilizing bright colors, playful elements, and large clickable areas to accommodate developing motor skills.
 
 * **Dynamic Filtering:** Users can filter by popularity, reading level, and theme, or query specific keywords using the search bar. 
 * **Recommendation Interface:** The main table displays the title, description, grade level, difficulty, popularity, and an interactive Match Score. The Match Score dynamically recalculates in real-time as users adjust filter parameters like the 1-8 reading ease scale or review counts.
 * **Visualizations:** Clicking on a book populates a horizontal bar chart comparing its reading ease against others in its theme, as well as a scatter plot plotting the book by average rating and reading ease. 
 
+
 ---
 
-## <a id="evaluation"></a>📊 Evaluation & Results
+## 7. <a id="evaluation"></a>📊 Evaluation & Results
 Both models were trained using an 80/20 data split. 
 * **Model Accuracy:** The Logistic Regression model achieved 96% accuracy, slightly outperforming the Random Forest model which reached 95% accuracy. 
 * **Retrieval Metrics:** Evaluated against 400 sample books, the model proved highly accurate at ranking relevant books, achieving a Precision@10 of 0.956 and an NDCG@10 of 0.952.
@@ -95,5 +99,5 @@ Both models were trained using an 80/20 data split.
 
 ---
 
-## <a id="limitations"></a>🔮 Limitations & Future Work
+## 8. <a id="limitations"></a>🔮 Limitations & Future Work
 Because the current readability scores rely on book descriptions rather than actual story text, they cannot detect thematic maturity or account for sophisticated blurbs written by adults. Future iterations will focus on full-text analysis and longitudinal studies to better understand the long-term impact on reading engagement.
