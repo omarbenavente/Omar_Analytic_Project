@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Installation](#install)
+- [Execution](#execute)
 - [📌 Problem Definition](#problem)
 - [🚀 Proposed Methodology & Data Pipeline](#methodology)
 - [🧠 Machine Learning Models](#models)
@@ -34,6 +35,15 @@
        * Used for data cleaning, model building, and "final.csv"
      * **Book Genie App.pbix**
         * Power Bi dashboard for vizualization
+
+## <a id="execute"></a> Execution
+
+1. Open **Final_Children_Book_Recommednation.ipynb** in Jupyter Notebook
+   * Make sure the three "Good Reads Datasets" is in the same folder as Final_Children_Book_Recommendation.ipynb
+2. Run all cells in order
+   * This will generate "final.csv"
+3. Open **Book Genie App.pbix**
+4. Ensure source is linked to "final.csv"
 
 ## <a id="problem"></a>📌 Problem Definition
 Despite reading comprehension being foundational to future success, approximately 40% of students in the US cannot read at a basic level. While there are many book recommendation systems available, they present two major flaws when applied to younger audiences:
